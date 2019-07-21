@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$1" != "" ]; then
+    plasma-discover $@
+    exit
+fi
+
+
+if [ "$(ps -e | grep plasma-discover)" = "" ]; then
+    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+        /usr/bin/eatmydata bigbashview /usr/share/bigbashview/bcc/apps/discover/index.sh.htm -s 960x580 -i /usr/share/icons/hicolor/128x128/apps/plasmadiscover.png
+    else
+        bigbashview /usr/share/bigbashview/bcc/apps/discover/index.sh.htm -s 1000x600 -i /usr/share/icons/hicolor/128x128/apps/plasmadiscover.png
+    fi
+else
+    kdialog --msgbox $"A loja de aplicativos já está aberta, feche-a para poder abrir novamente." --title $"Loja de aplicativos"
+fi

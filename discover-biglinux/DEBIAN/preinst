@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=discover-biglinux
+mkdir -p "/usr/share/dpkgdivert/discover-biglinux"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrshareapplicationsorg.kde.discover.desktop" --rename "/usr/share/applications/org.kde.discover.desktop"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/applications/org.kde.discover.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrshareapplicationsorg.kde.discover.desktop" --rename "/usr/share/applications/org.kde.discover.desktop"
+fi
+;;
+esac
+exit 0

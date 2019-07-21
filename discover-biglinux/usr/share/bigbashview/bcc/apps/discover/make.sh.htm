@@ -1,0 +1,36 @@
+#!/bin/bash
+
+if [ "$p_option" = "deb" ]; then
+    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+        /usr/bin/eatmydata plasma-discover --backends packagekit-backend > /dev/null &
+    else
+        plasma-discover --backends packagekit-backend > /dev/null &
+    fi
+fi
+
+if [ "$p_option" = "flatpak" ]; then
+    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+        /usr/bin/eatmydata plasma-discover --backends flatpak-backend > /dev/null &
+    else
+        plasma-discover --backends flatpak-backend > /dev/null &
+    fi
+fi
+
+if [ "$p_option" = "snap" ]; then
+    if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
+        /usr/bin/eatmydata plasma-discover --backends snap-backend --search "  " > /dev/null &
+    else
+        plasma-discover --backends snap-backend --search "  " > /dev/null &
+    fi
+fi
+
+
+
+cat << EOF
+<script>
+  window.onload = function () {
+     open(location, '_self').close();
+   };
+</script>
+
+EOF

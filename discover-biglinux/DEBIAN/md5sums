@@ -1,0 +1,9 @@
+cf154cb40d132020ac7fd51757f00132  DEBIAN/dpkg-divert
+7f63c82824bcd8d2a6ad7ab36378b799  DEBIAN/preinst
+bb468c2efc49075835b4be0e4947a6c6  DEBIAN/postrm
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+1a04bccce6283cae46b530ba70f74121  DEBIAN/control
+9c727a93b4d52cb8cd325b6be54ba1d1  usr/share/applications/org.kde.discover.desktop
+e96ef2ee2fa1ed717b0053786f7b29af  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
+0b6225ca58c3060dd549e22c9fc3292b  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
+db2165f47d8793450301616341787b81  usr/bin/discover-biglinux
