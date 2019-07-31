@@ -1,9 +1,11 @@
-cf154cb40d132020ac7fd51757f00132  DEBIAN/dpkg-divert
-7f63c82824bcd8d2a6ad7ab36378b799  DEBIAN/preinst
-bb468c2efc49075835b4be0e4947a6c6  DEBIAN/postrm
+688293fa5be476cacfdb2fb87d4eec21  DEBIAN/preinst
+b9fee4ed98fc07b8d2e28240e7587aaa  DEBIAN/postrm
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-1a04bccce6283cae46b530ba70f74121  DEBIAN/control
+aa84eaeede213fba4a0e0f0fca2627b7  DEBIAN/dpkg-divert
+1185f0440ea9789f9be54e76ba955cc7  DEBIAN/control
 9c727a93b4d52cb8cd325b6be54ba1d1  usr/share/applications/org.kde.discover.desktop
-e96ef2ee2fa1ed717b0053786f7b29af  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
-0b6225ca58c3060dd549e22c9fc3292b  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
+acedf18e6097764d1534dc659be6f030  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
+07d1717732dfa510e7d888b41accd191  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
+51bb0f4ed31ee7f2c5ac004173531256  usr/share/libdiscover/categories/flatpak-backend-categories.xml
+609e242c489ee3c83277e9b522addf64  usr/share/libdiscover/categories/packagekit-backend-categories.xml
 db2165f47d8793450301616341787b81  usr/bin/discover-biglinux

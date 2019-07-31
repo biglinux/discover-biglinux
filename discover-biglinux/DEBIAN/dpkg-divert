@@ -1,1 +1,3 @@
 /usr/share/applications/org.kde.discover.desktop
+/usr/share/libdiscover/categories/flatpak-backend-categories.xml
+/usr/share/libdiscover/categories/packagekit-backend-categories.xml

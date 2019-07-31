@@ -5,12 +5,33 @@ mkdir -p "/usr/share/dpkgdivert/discover-biglinux"
 case "$1" in
   install)
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrshareapplicationsorg.kde.discover.desktop" --rename "/usr/share/applications/org.kde.discover.desktop"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrsharelibdiscovercategoriesflatpak-backend-categories.xml" --rename "/usr/share/libdiscover/categories/flatpak-backend-categories.xml"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrsharelibdiscovercategoriespackagekit-backend-categories.xml" --rename "/usr/share/libdiscover/categories/packagekit-backend-categories.xml"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrsharelibdiscovercategoriessnap-backend-categories.xml" --rename "/usr/share/libdiscover/categories/snap-backend-categories.xml"
     ;;
+
   upgrade)
 if [ "$(dpkg-divert --list "/usr/share/applications/org.kde.discover.desktop")" = "" ]
 then
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrshareapplicationsorg.kde.discover.desktop" --rename "/usr/share/applications/org.kde.discover.desktop"
 fi
+if [ "$(dpkg-divert --list "/usr/share/libdiscover/categories/flatpak-backend-categories.xml")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrsharelibdiscovercategoriesflatpak-backend-categories.xml" --rename "/usr/share/libdiscover/categories/flatpak-backend-categories.xml"
+fi
+if [ "$(dpkg-divert --list "/usr/share/libdiscover/categories/packagekit-backend-categories.xml")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrsharelibdiscovercategoriespackagekit-backend-categories.xml" --rename "/usr/share/libdiscover/categories/packagekit-backend-categories.xml"
+fi
+
+if [ "$(dpkg-divert --list "/usr/share/libdiscover/categories/snap-backend-categories.xml")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/discover-biglinux/usrsharelibdiscovercategoriessnap-backend-categories.xml" --rename "/usr/share/libdiscover/categories/snap-backend-categories.xml"
+fi
 ;;
+
+
+
+
 esac
 exit 0
