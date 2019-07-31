@@ -18,7 +18,7 @@ fi
 
 if [ "$p_option" = "snap" ]; then
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-        /usr/bin/eatmydata plasma-discover --backends snap-backend --category "Apps Snap" > /dev/null &
+        /usr/bin/eatmydata plasma-discover --backends snap-backend --category " Apps Snap" > /dev/null &
     else
         plasma-discover --backends snap-backend --search "  " > /dev/null &
     fi

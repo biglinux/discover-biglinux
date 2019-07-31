@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Updates
+Name[pt]=Atualizações
+Name[pt_BR]=Atualizações
+Exec=plasma-discover --mode Update
+Icon=system-software-update
+Type=Application
+Keywords=update;upgrade;
+Categories=Qt;KDE;Settings;

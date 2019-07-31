@@ -2,7 +2,7 @@
 <Menu>
 
   <Menu>
-    <Name>Apps Snap</Name>
+    <Name> Apps Snap</Name>
     <Icon>applications-internet</Icon>
     <Image>pkcategories/applicationcrop.jpg</Image>
     <Include>
