@@ -4,7 +4,7 @@ if [ "$p_option" = "deb" ]; then
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
         /usr/bin/eatmydata plasma-discover --backends packagekit-backend > /dev/null &
     else
-        plasma-discover --backends packagekit-backend --category " Apps BigLinux/Ubuntu" > /dev/null &
+        plasma-discover --backends packagekit-backend --category " Apps" > /dev/null &
     fi
 fi
 

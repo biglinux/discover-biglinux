@@ -5,6 +5,6 @@ Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin
 Priority: optional
-Installed-Size:80
+Installed-Size:84
 Description: Screen to change plasma-discover to use just deb, flatpak or snap
 
