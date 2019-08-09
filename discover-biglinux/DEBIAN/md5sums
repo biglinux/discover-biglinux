@@ -2,8 +2,8 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 aa84eaeede213fba4a0e0f0fca2627b7  DEBIAN/dpkg-divert
 9f16fdbb511f6c5994361afc7d7e1dc8  DEBIAN/postrm
 36f3af706ced9811494e5e048d8e5643  DEBIAN/preinst
-6bd461efe137c50bfa3636e08244c659  DEBIAN/control
-9c727a93b4d52cb8cd325b6be54ba1d1  usr/share/applications/org.kde.discover.desktop
+1f3e73dec7401b318ca3db5ab84d0288  DEBIAN/control
+261489fb2a1211c6dc34d5bafa97d3e2  usr/share/applications/org.kde.discover.desktop
 9cb352501ec80cd63e30f226099dc505  usr/share/applications/org.kde.discover.updates.desktop
 acedf18e6097764d1534dc659be6f030  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
 49118ad6b468c95cf752a54695840619  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
