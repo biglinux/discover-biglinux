@@ -2,7 +2,7 @@
 
 if [ "$p_option" = "deb" ]; then
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-        /usr/bin/eatmydata plasma-discover --backends packagekit-backend > /dev/null &
+        /usr/bin/eatmydata plasma-discover --backends packagekit-backend --category " Apps" > /dev/null &
     else
         plasma-discover --backends packagekit-backend --category " Apps" > /dev/null &
     fi
@@ -10,7 +10,7 @@ fi
 
 if [ "$p_option" = "flatpak" ]; then
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-        /usr/bin/eatmydata plasma-discover --backends flatpak-backend > /dev/null &
+        /usr/bin/eatmydata plasma-discover --backends flatpak-backend --category " Apps Flatpak" > /dev/null &
     else
         plasma-discover --backends flatpak-backend --category " Apps Flatpak" > /dev/null &
     fi
@@ -18,7 +18,7 @@ fi
 
 if [ "$p_option" = "snap" ]; then
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
-        /usr/bin/eatmydata plasma-discover --backends snap-backend --category " Apps Snap" > /dev/null &
+        /usr/bin/eatmydata plasma-discover --backends snap-backend --category "  " > /dev/null &
     else
         plasma-discover --backends snap-backend --search "  " > /dev/null &
     fi
