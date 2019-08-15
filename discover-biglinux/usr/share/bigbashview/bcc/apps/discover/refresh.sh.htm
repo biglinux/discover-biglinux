@@ -169,24 +169,26 @@ $('.tooltipped').tooltip({
 EOF
 
 echo '<div id=page2>'
-echo '<div id="middle" class="bar"><h1>'
+echo '<div id="middle" class="bar"><br><br><br><br><br><h1>'
 
 
-  echo $"Para disponibilizar uma quantidade maior de programas, esta loja trabalha com três formatos de instalação. Cada um possui uma lista diferente de programas para serem instalados." '<p>'
+  echo $"Atualizando a lista de programas disponíveis, aguarde um momento…" '<p>'
 
 
-  echo $"Passe o mouse sobre as opções abaixo e faça sua escolha:" '<br><br><br><br>'
-
-
-
-echo '<div class="panel bw">'
-echo '<a href="/usr/share/bigbashview/bcc/apps/discover/refresh.sh.htm" class="css_btn_class black-text tooltipped" data-position="top" data-delay="150" data-tooltip="Maior quantidade de programas, downloads menores e menor necessidade de espaço para armazenamento."><button>' $"Padrão" '<br>' $"(Recomendado)" '</button></a>'
-
-echo '<a href="/usr/share/bigbashview/bcc/apps/discover/make.sh.htm?option=flatpak" class="css_btn_class black-text tooltipped" data-position="top" data-delay="150" data-tooltip="Programas muito bons, geralmente em versões mais atualizadas do que no formato padrão, porém, com downloads maiores e maior uso de espaço de armazenamento."><button>' $"Flatpak" '<br>' $"(Complementar)" '</button></a>'
-
-echo '<a href="/usr/share/bigbashview/bcc/apps/discover/make.sh.htm?option=snap" class="css_btn_class black-text tooltipped" data-position="top" data-delay="150" data-tooltip="Utilize este formato caso não encontre o programa desejado nos outros formatos."><button>' $"Snap" '<br>' $"(Alternativo)" '</button></a>'
-
-
-
-echo '</h1></div>'
 echo '</div></div>'
+
+
+echo '<script type="text/javascript">
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}'
+
+# Fix to interface don't crash
+echo 'sleep(200).then(() => {'
+
+# Redirect to another script
+echo "window.location.href = \"/usr/share/bigbashview/bcc/apps/discover/make.sh.htm?option=deb\""
+
+# Close javascript
+echo '});'
+echo '</script>'
