@@ -1,6 +1,7 @@
 #!/bin/bash
 
 if [ "$p_option" = "deb" ]; then
+    pkcon refresh
     if [ "$(findmnt -n -o FSTYPE -T /)" = "btrfs" ]; then
         /usr/bin/eatmydata plasma-discover --backends packagekit-backend --category " Apps" > /dev/null &
     else
