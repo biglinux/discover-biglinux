@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discover-biglinux\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-19 03:37-0300\n"
+"POT-Creation-Date: 2019-08-19 03:48-0300\n"
 "PO-Revision-Date: 2019-08-19 03:37-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,16 +29,32 @@ msgstr ""
 msgid "Passe o mouse sobre as opções abaixo e faça sua escolha:"
 msgstr ""
 
+msgid ""
+"Maior quantidade de programas, downloads menores e menor necessidade de "
+"espaço para armazenamento."
+msgstr ""
+
 msgid "Padrão"
 msgstr ""
 
 msgid "(Recomendado)"
 msgstr ""
 
+msgid ""
+"Programas muito bons, geralmente em versões mais atualizadas do que no "
+"formato padrão, porém, com downloads maiores e maior uso de espaço de "
+"armazenamento."
+msgstr ""
+
 msgid "Flatpak"
 msgstr ""
 
 msgid "(Complementar)"
+msgstr ""
+
+msgid ""
+"Utilize este formato caso não encontre o programa desejado nos outros "
+"formatos."
 msgstr ""
 
 msgid "Snap"
