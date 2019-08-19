@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=discover-biglinux
+
+
 if [ "$1" != "" ]; then
     plasma-discover $@
     exit

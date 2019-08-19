@@ -1,10 +1,10 @@
 Package: discover-biglinux
-Version: 1.0.0-1big7
+Version: 1.0.0-1big8
 Depends: plasma-discover, plasma-discover-flatpak-backend | plasma-discover-backend-flatpak, plasma-discover-snap-backend | plasma-discover-backend-snap, kdialog, packagekit-tools
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin
 Priority: optional
-Installed-Size:96
+Installed-Size:132
 Description: Screen to change plasma-discover to use just deb, flatpak or snap
 
