@@ -1,5 +1,5 @@
 Package: discover-biglinux
-Version: 1.0.0-1big8
+Version: 1.0.0-1big9
 Depends: plasma-discover, plasma-discover-flatpak-backend | plasma-discover-backend-flatpak, plasma-discover-snap-backend | plasma-discover-backend-snap, kdialog, packagekit-tools
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>

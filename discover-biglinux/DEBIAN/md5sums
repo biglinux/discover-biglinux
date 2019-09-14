@@ -7,14 +7,14 @@ bd83e7c026040d5c18dff2bf8e834cb5  DEBIAN/pt.po
 f27f52a57a0ac1da754213b008fb0ced  DEBIAN/discover-biglinux.pot
 7e2b85b31aa8883fe64387d6f3fee9e7  DEBIAN/en.po
 7f526687101a6bc4fb4f6adc2548d1c4  DEBIAN/en.mo
-d4aa159ade52300809720f58a1c00637  DEBIAN/control
 415bd0afa8c954325a2b886abcf34fae  DEBIAN/es.po
 10542487ab5752a57d8aec8e9760939c  DEBIAN/es.mo
+037044ef0092fda6941905f54db405fe  DEBIAN/control
 261489fb2a1211c6dc34d5bafa97d3e2  usr/share/applications/org.kde.discover.desktop
 9cb352501ec80cd63e30f226099dc505  usr/share/applications/org.kde.discover.updates.desktop
-f41a47e4aa5e9fb260d5bc9fe49aa31a  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
 2af926cedd9a343a5b9a54a52ddbfaef  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
 97dd11e0a5c59e591d76d03679aa9b44  usr/share/bigbashview/bcc/apps/discover/refresh.sh.htm
+d843477f99064af556754958ed694f83  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
 20811d403f96ebdd8e24c6ded429d207  usr/share/libdiscover/categories/flatpak-backend-categories.xml
 8a8b45e1e4a308f27d37395acfbfa9ef  usr/share/libdiscover/categories/packagekit-backend-categories.xml
 969c905155a9367139cb283ce16e4635  usr/share/libdiscover/categories/snap-backend-categories.xml
