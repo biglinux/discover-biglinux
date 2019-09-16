@@ -27,11 +27,4 @@ fi
 
 
 
-cat << EOF
-<script>
-  window.onload = function () {
-     open(location, '_self').close();
-   };
-</script>
-
-EOF
+echo '<META http-equiv="refresh" content="0;URL=/usr/share/bigbashview/close.sh">'

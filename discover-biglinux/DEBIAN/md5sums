@@ -12,7 +12,7 @@ f27f52a57a0ac1da754213b008fb0ced  DEBIAN/discover-biglinux.pot
 037044ef0092fda6941905f54db405fe  DEBIAN/control
 261489fb2a1211c6dc34d5bafa97d3e2  usr/share/applications/org.kde.discover.desktop
 9cb352501ec80cd63e30f226099dc505  usr/share/applications/org.kde.discover.updates.desktop
-2af926cedd9a343a5b9a54a52ddbfaef  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
+29a83f95f55c715a491c2fc0c4d119be  usr/share/bigbashview/bcc/apps/discover/make.sh.htm
 97dd11e0a5c59e591d76d03679aa9b44  usr/share/bigbashview/bcc/apps/discover/refresh.sh.htm
 d843477f99064af556754958ed694f83  usr/share/bigbashview/bcc/apps/discover/index.sh.htm
 20811d403f96ebdd8e24c6ded429d207  usr/share/libdiscover/categories/flatpak-backend-categories.xml
